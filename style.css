@@ -1,576 +1,1125 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-*{
+@media only screen and (max-width: 600px) {
+    /* For mobile phones: */
+    #navbar #menu {
+      display: none;
+    }
+    #about #photo {
+        display: none;
+    }
+
+    *{
     margin: 0;
     border: 0px;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     margin-bottom: 0;
-}
-html{
-    scroll-behavior: smooth;
-}
-#max-width{
-    max-width: 1300px;
-    padding: 0 40px;
-    margin: auto;
-}
-/* navbar styling */
-#navbar{
-    position: fixed;
-    width: 100%;
-    z-index: 999;
-    padding: 30px 0;
-    font-family: 'Ubuntu', sans-serif;
-    background: #111;
-    font-weight: 350;
-}
-#navbar #max-width{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-#navbar #sticky{
-    padding: 25px 0;
-    background: rgb(151, 153, 152);
-}
-#navbar #logo a{
-    color: rgb(255, 255, 255);
-    font-size: 25px;
-    font-weight: 600;
-    max-width: 15%;
-}
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    #navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        padding: 30px 0;
+        font-family: 'Ubuntu', sans-serif;
+        background: #111;
+        font-weight: 350;
+    }
+    #navbar #max-width{
+        display: flex;
+        align-items: center;
+        justify-content:space-evenly;
+    }
+    #navbar #logo a{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: 600;
+        max-width: 30%;
+    }
 
-#navbar #logo a #titleist{
-    max-height: 50px;
-    max-width: 100%;
-}
+    #navbar #logo a #titleist{
+        max-height: 50px;
+        max-width: 100%;
+    }
 
-#navbar #menu li{
-    list-style: none;
-    display:inline-block;
-}
-#navbar #menu li a{
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 500px;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-    position: relative;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    padding: 0 10px;
-}
-#navbar #menu li a:after{
-    content: "";
-    position: absolute;
-    background-color: rgb(151, 153, 152);
-    height: 3px;
-    width: 0;
-    left: 0;
-    bottom: -10px;
-    transition: 0.3s;
-}
-#navbar #menu li a:hover{
-    color: rgb(151, 153, 152);
-}
-#navbar #menu li a:hover:after{
-    width: 100%;
-}
-/* menu btn styling */
-#menu-btn{ 
-    color: rgb(151, 153, 152);
-    font-size: 23px;
-    cursor: pointer;
-    display: none;
-}
-/* home section styling */
-#home{
-    display: flex;
-    background: url("../Photos/Hunt\ Club\ 2.jpg") no-repeat center;
-    height: 100vh;
-    color: rgb(255, 255, 255);
-    background-size: cover;
-    background-attachment: fixed;
-    min-height: 500px;
-    font-family: 'Ubuntu', sans-serif;
-}
-#home #max-width{
-    margin: auto 0 auto 40px;
-}
-#home #home-content #text-1{
-    font-size: 27px;
-}
-#home #home-content #text-2{
-    font-size: 75px;
-    font-weight: 600;
-    margin-left: -3px;
-}
-#home #home-content #text-3{
-    font-size: 40px;
-    margin: 5px 0;
-}
-#home #home-content #text-3 span{
-    color: rgb(151, 153, 152);
-    font-weight: 500;
-}
-#home #home-content a{
-    display: inline-block;
-    background: rgb(151, 153, 152);
-    color: #fff;
-    font-size: 25px;
-    padding: 12px 36px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid rgb(151, 153, 152);
-    transition: all 0.3s ease;
-}
-#home #home-content a:hover{
-    color: #fff;
-    background: none;
-}
-#home #home-content a{
-    font-size: 23px;
-    padding: 10px 30px;
-}
-/* about section styling */
-section{
-    padding: 100px 0;
-}
-#about, #Acheivements, #Schedule{
-    font-family: 'Poppins', sans-serif;
-    background: #111;
-}
-section #title{
-    position: relative;
-    text-align: center;
-    font-size: 40px;
-    font-weight: 500;
-    margin-bottom: 60px;
-    padding-bottom: 20px;
-    font-family: 'Ubuntu', sans-serif;
-}
-section #title::before{
-    content: "";
-    position: absolute;
-    bottom: 0px;
-    left: 50%;
-    width: 180px;
-    height: 3px;
-    background: rgb(255, 255, 255);
-    transform: translateX(-50%);
-}
-#about #about-content{
-    display: table;
-    width: 100%;
-}
-#about #about-content::after{
-    clear: both;
-}
 
-#title::after{
-    clear: both;
-}
+    /* menu btn styling */
+    #menu-btn{ 
+        color: rgb(151, 153, 152);
+        font-size: 23px;
+        cursor: pointer;
+        display: none;
+    }
+    /* home section styling */
+    #home{
+        display: flex;
+        background: url("../Photos/Hunt\ Club\ 2.jpg") no-repeat center;
+        height: 80vh;
+        color: rgb(255, 255, 255);
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 100px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    #home #max-width{
+        margin: auto 0 auto 40px;
+    }
+    #home #home-content #text-1{
+        font-size: 20px;
+    }
+    #home #home-content #text-2{
+        font-size: 40px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    #home #home-content #text-3{
+        font-size: 30px;
+        margin: 5px 0;
+    }
+    #home #home-content #text-3 span{
+        color: rgb(151, 153, 152);
+        font-weight: 500;
+    }
+    #home #home-content a{
+        display: inline-block;
+        background: rgb(151, 153, 152);
+        color: #fff;
+        font-size: 25px;
+        padding: 12px 36px;
+        margin-top: 20px;
+        border-radius: 6px;
+        border: 2px solid rgb(151, 153, 152);
+        transition: all 0.3s ease;
+    }
+    #home #home-content a:hover{
+        color: #fff;
+        background: none;
+    }
+    #home #home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    /* about section styling */
+    section{
+        padding: 100px 0;
+    }
+    #about, #Acheivements, #Schedule{
+        font-family: 'Poppins', sans-serif;
+        background: #111;
+    }
+    section #title{
+        position: relative;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    section #title::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: rgb(255, 255, 255);
+        transform: translateX(-50%);
+    }
+    #about #about-content{
+        display: table;
+        width: 100%;
+    }
+    #about #about-content::after{
+        clear: both;
+    }
 
-#Acheivements #Acheivements-content, 
-#Schedule #Schedule-content,
-#MyStory #MyStory-content,
-#Myteam #Myteam-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
+    #title::after{
+        clear: both;
+    }
 
-section #title::after{
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    font-size: 20px;
-    color: rgb(151, 153, 152);
-    padding: 5px;
-    background: #111;
-    transform: translateX(-50%);
-}
-#about #title::after{
-    content:"";
-}
-#text{
-    color: #fff;
-}
-#p{
-    color: #fff;
-    text-align: center;
-}
-#title{
-    color: #fff;
-}
+    #Acheivements #Acheivements-content, 
+    #Schedule #Schedule-content,
+    #MyStory #MyStory-content,
+    #Myteam #Myteam-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
 
-#about #about-content{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-}
-.col-container {
-    display: table; /* Make the container element behave like a table */
-    width: 100%; /* Set full-width to expand the whole page */
-}
-  
-.col {
-    width: 50%;
-    float: left;
-    display: table-cell; /* Make elements inside the container behave like table cells */
-}
-#about #about-content #left{
-    width: 45%;
-    margin: auto;
-}
+    section #title::after{
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        font-size: 20px;
+        color: rgb(151, 153, 152);
+        padding: 5px;
+        background: #111;
+        transform: translateX(-50%);
+    }
+    #about #title::after{
+        content:"";
+    }
+    #text{
+        color: #fff;
+    }
+    #p{
+        color: #fff;
+        text-align: center;
+    }
+    #title{
+        color: #fff;
+    }
 
-#pic1{
-    width: 80%;
-    margin: auto;
-}
-
-#about #about-content #left #text{
-    text-align: center;
-    font-size: 25px;
-    font-weight: 600;
-    margin-bottom: 10px;
-    color: white;
-}
-#about #about-content #left #text span{
-    color: rgb(151, 153, 152);
-}
-#button a{
-    display: inline-block;
-    background: rgb(151, 153, 152);
-    color: #fff;
-    font-weight: 500;
-    font-size: 17px;
-    padding: 10px 30px;
-    margin-top: 20px;
-    border-radius: 6px;
-    border: 2px solid rgb(151, 153, 152);
-    transition: all 0.3s ease;
-}
-#button a:hover{
-    color: #fff;
-    background: none;
-}
-#button {
-    text-align: center;
-}
-/* Acheivements styling */
-#Acheivements{
-    color:#fff;
-    background: #111;
-    margin: 0;
-    margin-bottom: 0%;
-}
-#Acheivements #title::before{
-    background: #fff;
-}
-#Acheivements #title::after{
-    background: #111;
-    content: "AJGA Current Rank - 76";
-}
-#Acheivements #Acheivements-content #card{
-    width: calc(25% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-#Acheivements #Acheivements-content #card:hover{
-    background: rgb(151, 153, 152);
-}
-#Acheivements #Acheivements-content #card #box{
-    transition: all 0.3s ease;
-}
-#Acheivements #Acheivements-content #card:hover #box{
-    transform: scale(1.05);
-}
-#Acheivements #Acheivements-content #card #emoji{
-    font-size: 75px;
-}
-#Acheivements #Acheivements-content #card #emoji #AJGA{
-    width: 50%;
-}
-#Acheivements #Acheivements-content #card #Acheivements-text{
-    font-size: 15px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-    color: #fff;
-}
-#Acheivements-text a{
-    color: #fff;
-}
-#Acheivements #Acheivements-content2{
-    padding-top: 25px;
-    width: 80%;
-    font-size: 18px;
-    font-weight: 500px;
-}
-#Acheivements #Acheivements-content2 #menu li a{
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 500px;
-    margin-left: 25px;
-    transition: color 0.3s ease;
-    position: relative;
-    text-decoration: none;
-    letter-spacing: 0.5px;
-    padding: 0 10px;
-}
-
-/* Acheivement lists */
-.list1 {
-    counter-reset: li; 
-    list-style: none; 
-    padding: 0;
-    text-shadow: 0 1px 0 rgba(255,255,255,.5);
-  }
-
-.list1 a {
-    position: relative;
-    display: block;
-    padding: .4em .4em .4em .8em;
-    margin: .5em 0 .5em 2.5em;
-    background: #222;
-    color: #fff;
-    text-decoration: none;
-    transition: all .3s ease-out;
-}
-
-.list1 a:hover {background: rgb(151, 153, 152);}       
-.list1 a:before {
-    content: ">";
-    position: absolute;
-    left: -2.5em;
-    top: 50%;
-    margin-top: -1em;
-    background: rgb(151, 153, 152);
-    height: 2em;
-    width: 2em;
-    line-height: 2em;
-    text-align: center;
-    font-weight: bold;
-}
-
-.list a:after {
-    position: absolute;
-    content: "";
-    border: .5em solid transparent;
-    left: -1em;
-    top: 50%;
-    margin-top: -.5em;
-    transition: all .3s ease-out;
-}
-
-.list1 a:hover:after {
-    left: -.5em;
-    border-left-color: #f9dd94;
-}
+    #about #about-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .col-container {
+        display: table; /* Make the container element behave like a table */
+        width: 100%; /* Set full-width to expand the whole page */
+    }
     
-#menu2{
-    padding-bottom: 15px;
-}
-/* Schedule styling */
-#Schedule{
-    color:#fff;
-    background: #111;
-    margin: 0;
-    margin-bottom: 0%;
-}
-#Schedule-text{
-    font-size: 25px;
-    font-weight: 600;
-}
-#Schedule #title::before{
-    background: #fff;
-}
-#Schedule #title::after{
-    background: #111;
-    content: "23/24";
-}
-#Schedule #Schedule-content #card{
-    width: calc(25% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-#Schedule #Schedule-content #card:hover{
-    background: rgb(151, 153, 152);;
-}
-#Schedule #Schedule-content #card #box{
-    transition: all 0.3s ease;
-}
-#Schedule #Schedule-content #card:hover #box{
-    transform: scale(1.05);
-}
-#Schedule #Schedule-content #card #emoji{
-    font-size: 75px;
-}
-#Schedule #Schedule-content #card #unit-text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-    color: #fff;
-}
-#Schedule-text a{
-    color: #fff;
-}
-/* Unit 3 styling */
-#MyStory{
-    color:#fff;
-    background: #111;
-    margin: 0;
-    margin-bottom: 0%;
-}
-#MyStory-text{
-    font-size: 25px;
-    font-weight: 600;
-}
-#MyStory #title::before{
-    background: #fff;
-}
-#MyStory #title::after{
-    background: #111;
-    content: "";
-}
-#MyStory #MyStory-content #card{
-    width: calc(50% - 20px);
-    background: #222;
-    text-align: center;
-    border-radius: 6px;
-    padding: 20px 25px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-#MyStory #MyStory-content #card:hover{
-    background: rgb(151, 153, 152);;
-}
-#MyStory #MyStory-content #card #box{
-    transition: all 0.3s ease;
-}
-#MyStory #MyStory-content #card:hover #box{
-    transform: scale(1.05);
-}
-#MyStory #MyStory-content #card #emoji{
-    font-size: 75px;
-}
-#MyStory #MyStory-content #card #unit-text{
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-    color: #fff;
-}
-#MyStory-text a{
-    color: #fff;
-}
-/* Unit 4 styling */
-#Myteam{
-    color:black;
-    background: #111;
-    margin: 0;
-    padding-bottom: 40px;
-}
-#Myteam-text{
-    font-size: 25px;
-    font-weight: 600;
-}
-#Myteam #title::before{
-    background: #fff;
-}
-#Myteam #title::after{
-    background: #111;
-    content: "";
-}
-/* Style the container with a rounded border, grey background and some padding and margin */
-.container {
-    border: 2px solid #ccc;
-    background-color: #eee;
-    border-radius: 5px;
-    padding: 16px;
-    margin: 16px 0;
-    width: 20%;
-  }
-  
-  /* Clear floats after containers */
-  .container::after {
-    content: "";
-    clear: both;
-    display: table;
-  }
-  
-  /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
-  .container img {
-    float: left;
-    margin-right: 20px;
-    border-radius: 50%;
-  }
-  
-  /* Increase the font-size of a span element */
-  .container span {
-    font-size: 20px;
-    margin-right: 15px;
-  }
-  
-  /* Add media queries for responsiveness. This will center both the text and the image inside the container */
-  @media (max-width: 500px) {
+    .col {
+        width: 100%;
+        display: table-cell; /* Make elements inside the container behave like table cells */
+    }
+    #about #about-content #left{
+        width: 100%;
+        margin: auto;
+    }
+
+    #pic1{
+        width: 80%;
+        margin: auto;
+    }
+
+    #about #about-content #left #text{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: white;
+    }
+    #about #about-content #left #text span{
+        color: rgb(151, 153, 152);
+    }
+    #button a{
+        display: inline-block;
+        background: rgb(151, 153, 152);
+        color: #fff;
+        font-weight: 500;
+        font-size: 17px;
+        padding: 10px 30px;
+        margin-top: 20px;
+        border-radius: 6px;
+        border: 2px solid rgb(151, 153, 152);
+        transition: all 0.3s ease;
+    }
+    #button a:hover{
+        color: #fff;
+        background: none;
+    }
+    #button {
+        text-align: center;
+    }
+    /* Acheivements styling */
+    #Acheivements{
+        color:#fff;
+        background: #111;
+        margin: 0;
+        margin-bottom: 0%;
+    }
+    #Acheivements #title::before{
+        background: #fff;
+    }
+    #Acheivements #title::after{
+        background: #111;
+        content: "AJGA Current Rank - 76";
+    }
+    #Acheivements #Acheivements-content #card{
+        width: 80%;
+        background: #222;
+        text-align: center;
+        border-radius: 6px;
+        padding: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    #Acheivements #Acheivements-content #card:hover{
+        background: rgb(151, 153, 152);
+    }
+    #Acheivements #Acheivements-content #card #box{
+        transition: all 0.3s ease;
+    }
+    #Acheivements #Acheivements-content #card:hover #box{
+        transform: scale(1.05);
+    }
+    #Acheivements #Acheivements-content #card #emoji{
+        font-size: 75px;
+    }
+    #Acheivements #Acheivements-content #card #emoji #AJGA{
+        width: 50%;
+    }
+    #Acheivements #Acheivements-content #card #Acheivements-text{
+        font-size: 15px;
+        font-weight: 500;
+        margin: 10px 0 7px 0;
+        color: #fff;
+    }
+    #Acheivements-text a{
+        color: #fff;
+    }
+    #Acheivements #Acheivements-content2{
+        padding-top: 25px;
+        width: 80%;
+        font-size: 12px;
+        font-weight: 200px;
+        margin: auto;
+    }
+    #Acheivements #Acheivements-content2 #menu li a{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 500px;
+        margin-left: 25px;
+        transition: color 0.3s ease;
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+    }
+
+    /* Acheivement lists */
+    .list1 {
+        counter-reset: li; 
+        list-style: none; 
+        padding: 0;
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+
+    .list1 a {
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em .8em;
+        margin: .5em 0 .5em 2.5em;
+        background: #222;
+        color: #fff;
+        text-decoration: none;
+        transition: all .3s ease-out;
+    }
+
+    .list1 a:hover {background: rgb(151, 153, 152);}       
+    .list1 a:before {
+        content: ">";
+        position: absolute;
+        left: -2.5em;
+        top: 50%;
+        margin-top: -1em;
+        background: rgb(151, 153, 152);
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .list a:after {
+        position: absolute;
+        content: "";
+        border: .5em solid transparent;
+        left: -1em;
+        top: 50%;
+        margin-top: -.5em;
+        transition: all .3s ease-out;
+    }
+
+    .list1 a:hover:after {
+        left: -.5em;
+        border-left-color: #f9dd94;
+    }
+        
+    #menu2{
+        padding-bottom: 15px;
+    }
+    /* Schedule styling */
+    #Schedule{
+        color:#fff;
+        background: #111;
+        margin: 0;
+        margin-bottom: 0%;
+    }
+    #Schedule-text{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #Schedule #title::before{
+        background: #fff;
+    }
+    #Schedule #title::after{
+        background: #111;
+        content: "23/24";
+    }
+    #Schedule #Schedule-content #card{
+        width: calc(25% - 20px);
+        background: #222;
+        text-align: center;
+        border-radius: 6px;
+        padding: 20px 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    #Schedule #Schedule-content #card:hover{
+        background: rgb(151, 153, 152);;
+    }
+    #Schedule #Schedule-content #card #box{
+        transition: all 0.3s ease;
+    }
+    #Schedule #Schedule-content #card:hover #box{
+        transform: scale(1.05);
+    }
+    #Schedule #Schedule-content #card #emoji{
+        font-size: 75px;
+    }
+    #Schedule #Schedule-content #card #unit-text{
+        font-size: 25px;
+        font-weight: 500;
+        margin: 10px 0 7px 0;
+        color: #fff;
+    }
+    #Schedule-text a{
+        color: #fff;
+    }
+    /* Unit 3 styling */
+    #MyStory{
+        color:#fff;
+        background: #111;
+        margin: 0;
+        margin-bottom: 0%;
+    }
+    #MyStory-text{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #MyStory #title::before{
+        background: #fff;
+    }
+    #MyStory #title::after{
+        background: #111;
+        content: "";
+    }
+    #MyStory #MyStory-content #card{
+        width: calc(50% - 20px);
+        background: #222;
+        text-align: center;
+        border-radius: 6px;
+        padding: 20px 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    #MyStory #MyStory-content #card:hover{
+        background: rgb(151, 153, 152);;
+    }
+    #MyStory #MyStory-content #card #box{
+        transition: all 0.3s ease;
+    }
+    #MyStory #MyStory-content #card:hover #box{
+        transform: scale(1.05);
+    }
+    #MyStory #MyStory-content #card #emoji{
+        font-size: 75px;
+    }
+    #MyStory #MyStory-content #card #unit-text{
+        font-size: 25px;
+        font-weight: 500;
+        margin: 10px 0 7px 0;
+        color: #fff;
+    }
+    #MyStory-text a{
+        color: #fff;
+    }
+    /* Unit 4 styling */
+    #Myteam{
+        color:black;
+        background: #111;
+        margin: 0;
+        padding-bottom: 40px;
+    }
+    #Myteam-text{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #Myteam #title::before{
+        background: #fff;
+    }
+    #Myteam #title::after{
+        background: #111;
+        content: "";
+    }
+    /* Style the container with a rounded border, grey background and some padding and margin */
     .container {
-      text-align: center;
+        border: 2px solid #ccc;
+        background-color: #eee;
+        border-radius: 5px;
+        padding: 16px;
+        margin: auto;
+        margin-bottom: 20px;
+        width: 80%;
     }
-  
+    
+    /* Clear floats after containers */
+    .container::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
     .container img {
-      margin: auto;
-      float: none;
-      display: block;
+        float: left;
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+    
+    /* Increase the font-size of a span element */
+    .container span {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    
+    /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+    @media (max-width: 500px) {
+        .container {
+        text-align: center;
+        }
+    
+        .container img {
+        margin: auto;
+        float: none;
+        display: block;
+        }
+    }
+
+    /* Footer section styling */
+    #footer{
+        width: 100%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 100px;
+        background: #111;
+        text-align: center;
+        color: #fff;
+    }
+
+    #menu1{
+        width: 100%;
+        margin:auto;
+        margin-bottom: 20px;
+    }
+
+    #menu2{
+        width: 100%;
+        margin:auto;
+    }
+    .menu li{
+        list-style: none;
+    }
+    .menu li a{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 500px;
+        margin-left: 25px;
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+    }
+
+    .menu li a #instagram{
+        max-height: 30px;
+        max-width: 100%;
     }
   }
 
-/* Footer section styling */
-#footer{
-    width: 100%;
-    padding-bottom: 0%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 20px;
-    font-weight: 400;
-    background: #111;
-    padding: 0 0 10px 0;
-    text-align: center;
-    color: #fff;
-}
-
-#menu1{
-    margin-left: 35%;
-    float: left;
-}
-
-#menu2{
-    margin-right: 35%;
-    float: right;
-}
-.menu li{
-    list-style: none;
-}
-.menu li a{
-    color: rgb(255, 255, 255);
-    font-size: 18px;
-    font-weight: 500px;
-    margin-left: 25px;
-    position: relative;
+@media only screen and (min-width: 601px){
+    *{
+    margin: 0;
+    border: 0px;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
-    letter-spacing: 0.5px;
-}
+    margin-bottom: 0;
+    }
+    html{
+        scroll-behavior: smooth;
+    }
+    #max-width{
+        max-width: 1300px;
+        padding: 0 40px;
+        margin: auto;
+    }
+    /* navbar styling */
+    #navbar{
+        position: fixed;
+        width: 100%;
+        z-index: 999;
+        padding: 30px 0;
+        font-family: 'Ubuntu', sans-serif;
+        background: #111;
+        font-weight: 350;
+    }
+    #navbar #max-width{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    #navbar #sticky{
+        padding: 25px 0;
+        background: rgb(151, 153, 152);
+    }
+    #navbar #logo a{
+        color: rgb(255, 255, 255);
+        font-size: 25px;
+        font-weight: 600;
+        max-width: 15%;
+    }
 
-.menu li a #instagram{
-    max-height: 30px;
-    max-width: 100%;
+    #navbar #logo a #titleist{
+        max-height: 50px;
+        max-width: 100%;
+    }
+
+    #navbar #menu li{
+        list-style: none;
+        display:inline-block;
+    }
+    #navbar #menu li a{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 500px;
+        margin-left: 25px;
+        transition: color 0.3s ease;
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+    }
+    #navbar #menu li a:after{
+        content: "";
+        position: absolute;
+        background-color: rgb(151, 153, 152);
+        height: 3px;
+        width: 0;
+        left: 0;
+        bottom: -10px;
+        transition: 0.3s;
+    }
+    #navbar #menu li a:hover{
+        color: rgb(151, 153, 152);
+    }
+    #navbar #menu li a:hover:after{
+        width: 100%;
+    }
+    /* menu btn styling */
+    #menu-btn{ 
+        color: rgb(151, 153, 152);
+        font-size: 23px;
+        cursor: pointer;
+        display: none;
+    }
+    /* home section styling */
+    #home{
+        display: flex;
+        background: url("../Photos/Hunt\ Club\ 2.jpg") no-repeat center;
+        height: 100vh;
+        color: rgb(255, 255, 255);
+        background-size: cover;
+        background-attachment: fixed;
+        min-height: 500px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    #home #max-width{
+        margin: auto 0 auto 40px;
+    }
+    #home #home-content #text-1{
+        font-size: 27px;
+    }
+    #home #home-content #text-2{
+        font-size: 75px;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    #home #home-content #text-3{
+        font-size: 40px;
+        margin: 5px 0;
+    }
+    #home #home-content #text-3 span{
+        color: rgb(151, 153, 152);
+        font-weight: 500;
+    }
+    #home #home-content a{
+        display: inline-block;
+        background: rgb(151, 153, 152);
+        color: #fff;
+        font-size: 25px;
+        padding: 12px 36px;
+        margin-top: 20px;
+        border-radius: 6px;
+        border: 2px solid rgb(151, 153, 152);
+        transition: all 0.3s ease;
+    }
+    #home #home-content a:hover{
+        color: #fff;
+        background: none;
+    }
+    #home #home-content a{
+        font-size: 23px;
+        padding: 10px 30px;
+    }
+    /* about section styling */
+    section{
+        padding: 100px 0;
+    }
+    #about, #Acheivements, #Schedule{
+        font-family: 'Poppins', sans-serif;
+        background: #111;
+    }
+    section #title{
+        position: relative;
+        text-align: center;
+        font-size: 40px;
+        font-weight: 500;
+        margin-bottom: 60px;
+        padding-bottom: 20px;
+        font-family: 'Ubuntu', sans-serif;
+    }
+    section #title::before{
+        content: "";
+        position: absolute;
+        bottom: 0px;
+        left: 50%;
+        width: 180px;
+        height: 3px;
+        background: rgb(255, 255, 255);
+        transform: translateX(-50%);
+    }
+    #about #about-content{
+        display: table;
+        width: 100%;
+    }
+    #about #about-content::after{
+        clear: both;
+    }
+
+    #title::after{
+        clear: both;
+    }
+
+    #Acheivements #Acheivements-content, 
+    #Schedule #Schedule-content,
+    #MyStory #MyStory-content,
+    #Myteam #Myteam-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    section #title::after{
+        position: absolute;
+        bottom: -12px;
+        left: 50%;
+        font-size: 20px;
+        color: rgb(151, 153, 152);
+        padding: 5px;
+        background: #111;
+        transform: translateX(-50%);
+    }
+    #about #title::after{
+        content:"";
+    }
+    #text{
+        color: #fff;
+    }
+    #p{
+        color: #fff;
+        text-align: center;
+    }
+    #title{
+        color: #fff;
+    }
+
+    #about #about-content{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .col-container {
+        display: table; /* Make the container element behave like a table */
+        width: 100%; /* Set full-width to expand the whole page */
+    }
+    
+    .col {
+        width: 50%;
+        float: left;
+        display: table-cell; /* Make elements inside the container behave like table cells */
+    }
+    #about #about-content #left{
+        width: 45%;
+        margin: auto;
+    }
+
+    #pic1{
+        width: 80%;
+        margin: auto;
+    }
+
+    #about #about-content #left #text{
+        text-align: center;
+        font-size: 25px;
+        font-weight: 600;
+        margin-bottom: 10px;
+        color: white;
+    }
+    #about #about-content #left #text span{
+        color: rgb(151, 153, 152);
+    }
+    #button a{
+        display: inline-block;
+        background: rgb(151, 153, 152);
+        color: #fff;
+        font-weight: 500;
+        font-size: 17px;
+        padding: 10px 30px;
+        margin-top: 20px;
+        border-radius: 6px;
+        border: 2px solid rgb(151, 153, 152);
+        transition: all 0.3s ease;
+    }
+    #button a:hover{
+        color: #fff;
+        background: none;
+    }
+    #button {
+        text-align: center;
+    }
+    /* Acheivements styling */
+    #Acheivements{
+        color:#fff;
+        background: #111;
+        margin: 0;
+        margin-bottom: 0%;
+    }
+    #Acheivements #title::before{
+        background: #fff;
+    }
+    #Acheivements #title::after{
+        background: #111;
+        content: "AJGA Current Rank - 76";
+    }
+    #Acheivements #Acheivements-content #card{
+        width: calc(25% - 20px);
+        background: #222;
+        text-align: center;
+        border-radius: 6px;
+        padding: 20px 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    #Acheivements #Acheivements-content #card:hover{
+        background: rgb(151, 153, 152);
+    }
+    #Acheivements #Acheivements-content #card #box{
+        transition: all 0.3s ease;
+    }
+    #Acheivements #Acheivements-content #card:hover #box{
+        transform: scale(1.05);
+    }
+    #Acheivements #Acheivements-content #card #emoji{
+        font-size: 75px;
+    }
+    #Acheivements #Acheivements-content #card #emoji #AJGA{
+        width: 50%;
+    }
+    #Acheivements #Acheivements-content #card #Acheivements-text{
+        font-size: 15px;
+        font-weight: 500;
+        margin: 10px 0 7px 0;
+        color: #fff;
+    }
+    #Acheivements-text a{
+        color: #fff;
+    }
+    #Acheivements #Acheivements-content2{
+        padding-top: 25px;
+        width: 80%;
+        font-size: 18px;
+        font-weight: 500px;
+    }
+    #Acheivements #Acheivements-content2 #menu li a{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 500px;
+        margin-left: 25px;
+        transition: color 0.3s ease;
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+        padding: 0 10px;
+    }
+
+    /* Acheivement lists */
+    .list1 {
+        counter-reset: li; 
+        list-style: none; 
+        padding: 0;
+        text-shadow: 0 1px 0 rgba(255,255,255,.5);
+    }
+
+    .list1 a {
+        position: relative;
+        display: block;
+        padding: .4em .4em .4em .8em;
+        margin: .5em 0 .5em 2.5em;
+        background: #222;
+        color: #fff;
+        text-decoration: none;
+        transition: all .3s ease-out;
+    }
+
+    .list1 a:hover {background: rgb(151, 153, 152);}       
+    .list1 a:before {
+        content: ">";
+        position: absolute;
+        left: -2.5em;
+        top: 50%;
+        margin-top: -1em;
+        background: rgb(151, 153, 152);
+        height: 2em;
+        width: 2em;
+        line-height: 2em;
+        text-align: center;
+        font-weight: bold;
+    }
+
+    .list a:after {
+        position: absolute;
+        content: "";
+        border: .5em solid transparent;
+        left: -1em;
+        top: 50%;
+        margin-top: -.5em;
+        transition: all .3s ease-out;
+    }
+
+    .list1 a:hover:after {
+        left: -.5em;
+        border-left-color: #f9dd94;
+    }
+        
+    #menu2{
+        padding-bottom: 15px;
+    }
+    /* Schedule styling */
+    #Schedule{
+        color:#fff;
+        background: #111;
+        margin: 0;
+        margin-bottom: 0%;
+    }
+    #Schedule-text{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #Schedule #title::before{
+        background: #fff;
+    }
+    #Schedule #title::after{
+        background: #111;
+        content: "23/24";
+    }
+    #Schedule #Schedule-content #card{
+        width: calc(25% - 20px);
+        background: #222;
+        text-align: center;
+        border-radius: 6px;
+        padding: 20px 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    #Schedule #Schedule-content #card:hover{
+        background: rgb(151, 153, 152);;
+    }
+    #Schedule #Schedule-content #card #box{
+        transition: all 0.3s ease;
+    }
+    #Schedule #Schedule-content #card:hover #box{
+        transform: scale(1.05);
+    }
+    #Schedule #Schedule-content #card #emoji{
+        font-size: 75px;
+    }
+    #Schedule #Schedule-content #card #unit-text{
+        font-size: 25px;
+        font-weight: 500;
+        margin: 10px 0 7px 0;
+        color: #fff;
+    }
+    #Schedule-text a{
+        color: #fff;
+    }
+    /* Unit 3 styling */
+    #MyStory{
+        color:#fff;
+        background: #111;
+        margin: 0;
+        margin-bottom: 0%;
+    }
+    #MyStory-text{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #MyStory #title::before{
+        background: #fff;
+    }
+    #MyStory #title::after{
+        background: #111;
+        content: "";
+    }
+    #MyStory #MyStory-content #card{
+        width: calc(50% - 20px);
+        background: #222;
+        text-align: center;
+        border-radius: 6px;
+        padding: 20px 25px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    #MyStory #MyStory-content #card:hover{
+        background: rgb(151, 153, 152);;
+    }
+    #MyStory #MyStory-content #card #box{
+        transition: all 0.3s ease;
+    }
+    #MyStory #MyStory-content #card:hover #box{
+        transform: scale(1.05);
+    }
+    #MyStory #MyStory-content #card #emoji{
+        font-size: 75px;
+    }
+    #MyStory #MyStory-content #card #unit-text{
+        font-size: 25px;
+        font-weight: 500;
+        margin: 10px 0 7px 0;
+        color: #fff;
+    }
+    #MyStory-text a{
+        color: #fff;
+    }
+    /* Unit 4 styling */
+    #Myteam{
+        color:black;
+        background: #111;
+        margin: 0;
+        padding-bottom: 40px;
+    }
+    #Myteam-text{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    #Myteam #title::before{
+        background: #fff;
+    }
+    #Myteam #title::after{
+        background: #111;
+        content: "";
+    }
+    /* Style the container with a rounded border, grey background and some padding and margin */
+    .container {
+        border: 2px solid #ccc;
+        background-color: #eee;
+        border-radius: 5px;
+        padding: 16px;
+        margin: 16px 0;
+        width: 20%;
+    }
+    
+    /* Clear floats after containers */
+    .container::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    /* Float images inside the container to the left. Add a right margin, and style the image as a circle */
+    .container img {
+        float: left;
+        margin-right: 20px;
+        border-radius: 50%;
+    }
+    
+    /* Increase the font-size of a span element */
+    .container span {
+        font-size: 20px;
+        margin-right: 15px;
+    }
+    
+    /* Add media queries for responsiveness. This will center both the text and the image inside the container */
+    @media (max-width: 500px) {
+        .container {
+        text-align: center;
+        }
+    
+        .container img {
+        margin: auto;
+        float: none;
+        display: block;
+        }
+    }
+
+    /* Footer section styling */
+    #footer{
+        width: 100%;
+        padding-bottom: 0%;
+        font-family: 'Poppins', sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        background: #111;
+        padding: 0 0 10px 0;
+        text-align: center;
+        color: #fff;
+    }
+
+    #menu1{
+        margin-left: 35%;
+        float: left;
+    }
+
+    #menu2{
+        margin-right: 35%;
+        float: right;
+    }
+    .menu li{
+        list-style: none;
+    }
+    .menu li a{
+        color: rgb(255, 255, 255);
+        font-size: 18px;
+        font-weight: 500px;
+        margin-left: 25px;
+        position: relative;
+        text-decoration: none;
+        letter-spacing: 0.5px;
+    }
+
+    .menu li a #instagram{
+        max-height: 30px;
+        max-width: 100%;
+    }
 }
