@@ -815,6 +815,33 @@
     #button {
         text-align: center;
     }
+
+    /* Gallery Styling */
+
+    #gallery {
+        background: #111;
+    }
+    div.scroll-container {
+        overflow: auto;
+        white-space: nowrap;
+        padding: 20px;
+        background: #111;
+      }
+    
+      .scroll-container::-webkit-scrollbar {
+        display: none;
+      }
+      
+    div.scroll-container img {
+        padding-left: 10px;
+      }
+
+    #galImg{
+        height: 100%;
+        width: 60%;
+    }
+    
+
     /* Acheivements styling */
     #Acheivements{
         color:#fff;
@@ -869,6 +896,14 @@
         font-weight: 500px;
         margin: auto;
     }
+
+    #Acheivements #Acheivements-content2 h3{
+        padding-top: 10px;
+        width: 80%;
+        font-size: 18px;
+        font-weight: 500px;
+        margin: auto;
+    }
     #Acheivements #Acheivements-content2 #menu li a{
         color: rgb(255, 255, 255);
         font-size: 18px;
@@ -885,8 +920,10 @@
     .list1 {
         counter-reset: li; 
         list-style: none; 
-        padding: 0;
+        padding-top: 15px;
         text-shadow: 0 1px 0 rgba(255,255,255,.5);
+        width: 80%;
+        margin: auto;
     }
 
     .list1 a {
@@ -981,6 +1018,11 @@
     #Schedule-text a{
         color: #fff;
     }
+
+    #Schedule #Schedule2{
+        padding: 25px;
+    }
+
     /* Unit 3 styling */
     #MyStory{
         color:#fff;
@@ -1054,7 +1096,7 @@
         border-radius: 5px;
         padding: 16px;
         margin: 16px 0;
-        width: 20%;
+        width: 18%;
     }
     
     /* Clear floats after containers */
