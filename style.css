@@ -7,6 +7,9 @@
         display: none;
     }
 
+    #about #max-width #right {
+        display: none;
+    }
     *{
         margin: 0;
         border: 0px;
@@ -101,7 +104,7 @@
         font-size: 23px;
         padding: 10px 30px;
     }
-    /* about section styling */
+    /* about section styling --------------------------------------------*/
     section{
         padding: 100px 0;
     }
@@ -228,6 +231,33 @@
     #button {
         text-align: center;
     }
+
+    /* Gallery Styling ----------------------------------------- */
+
+    #gallery {
+        background: #111;
+    }
+    div.scroll-container {
+        overflow: auto;
+        white-space: nowrap;
+        padding: 20px;
+        background: #111;
+      }
+    
+      .scroll-container::-webkit-scrollbar {
+        display: none;
+      }
+      
+    div.scroll-container img {
+        padding-left: 10px;
+      }
+
+    #galImg{
+        height: 100%;
+        width: 100%;
+    }
+
+
     /* Acheivements styling */
     #Acheivements{
         color:#fff;
@@ -373,13 +403,15 @@
         content: "23/24";
     }
     #Schedule #Schedule-content #card{
-        width: calc(25% - 20px);
+        width: 80%;
         background: #222;
         text-align: center;
         border-radius: 6px;
-        padding: 20px 25px;
+        padding: 30px;
         cursor: pointer;
         transition: all 0.3s ease;
+        margin: auto;
+        margin-bottom: 20px;
     }
     #Schedule #Schedule-content #card:hover{
         background: rgb(151, 153, 152);;
@@ -401,6 +433,10 @@
     }
     #Schedule-text a{
         color: #fff;
+    }
+
+    #Schedule #Schedule2{
+        padding: 25px;
     }
     /* Unit 3 styling */
     #MyStory{
@@ -816,7 +852,7 @@
         text-align: center;
     }
 
-    /* Gallery Styling */
+    /* Gallery Styling -----------------------------------------------------------------------------------------*/
 
     #gallery {
         background: #111;
@@ -842,7 +878,7 @@
     }
     
 
-    /* Acheivements styling */
+    /* Acheivements styling -------------------------------------------------------------------------------------------------*/
     #Acheivements{
         color:#fff;
         background: #111;
@@ -854,7 +890,7 @@
     }
     #Acheivements #title::after{
         background: #111;
-        content: "AJGA Current Rank - 76";
+        content: "AJGA Current Rank - 74";
     }
     #Acheivements #Acheivements-content #card{
         width: calc(25% - 20px);
@@ -916,7 +952,7 @@
         padding: 0 10px;
     }
 
-    /* Acheivement lists */
+    /* Acheivement lists ---------------------------------------------------------------------------------------------------------*/
     .list1 {
         counter-reset: li; 
         list-style: none; 
@@ -970,7 +1006,7 @@
     #menu2{
         padding-bottom: 15px;
     }
-    /* Schedule styling */
+    /* Schedule styling -----------------------------------------------------------------------------------------*/
     #Schedule{
         color:#fff;
         background: #111;
@@ -1009,7 +1045,10 @@
     #Schedule #Schedule-content #card #emoji{
         font-size: 75px;
     }
-    #Schedule #Schedule-content #card #unit-text{
+    #Schedule #Schedule-content #card #emoji img{
+        width: 80%;
+    }
+    #Schedule #Schedule-content #card #Acheivements-text{
         font-size: 25px;
         font-weight: 500;
         margin: 10px 0 7px 0;
@@ -1023,7 +1062,7 @@
         padding: 25px;
     }
 
-    /* Unit 3 styling */
+    /* My Story styling -------------------------------------------------------------------------------------------------------------------------*/
     #MyStory{
         color:#fff;
         background: #111;
@@ -1071,7 +1110,8 @@
     #MyStory-text a{
         color: #fff;
     }
-    /* Unit 4 styling */
+
+    /* My team styling --------------------------------------------------------------------------------------------------------*/
     #Myteam{
         color:black;
         background: #111;
@@ -1111,6 +1151,7 @@
         float: left;
         margin-right: 20px;
         border-radius: 50%;
+        width: 80%;
     }
     
     /* Increase the font-size of a span element */
@@ -1129,6 +1170,7 @@
         margin: auto;
         float: none;
         display: block;
+        width: 50%;
         }
     }
 
