@@ -55,7 +55,7 @@
         cursor: pointer;
         display: none;
     }
-    /* home section styling */
+    /* home section styling -----------------------------------*/
     #home{
         display: flex;
         background: url("../Photos/Hunt\ Club\ 2.jpg") no-repeat center;
