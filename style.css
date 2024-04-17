@@ -270,7 +270,7 @@
     }
     #Acheivements #title::after{
         background: #111;
-        content: "AJGA Current Rank - 71";
+        content: "AJGA Current Rank - 107";
     }
     #Acheivements #Acheivements-content #card{
         width: 80%;
@@ -890,7 +890,7 @@
     }
     #Acheivements #title::after{
         background: #111;
-        content: "AJGA Current Rank - 71";
+        content: "AJGA Current Rank - 107";
     }
     #Acheivements #Acheivements-content #card{
         width: calc(25% - 20px);
