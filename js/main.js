@@ -53,14 +53,14 @@ $(function(){
         direction: 'horizontal',
         slidesPerView : 'auto', // 한 슬라이드에 보여줄 갯수
         // spaceBetween: 25, // 슬라이드 사이 여백
-        autoHeight : true,
+        // autoHeight : true,
         pagination: {
             el: ".swiper-pagination",
             type: "fraction",
           },
         autoplay : {  // 자동 슬라이드 설정 , 비 활성화 시 false
 
-        delay : 2500,   // 시간 설정
+        delay : 3500,   // 시간 설정
         
         disableOnInteraction : false,  // false로 설정하면 스와이프 후 자동 재생이 비활성화 되지 않음
         

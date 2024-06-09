@@ -313,12 +313,12 @@ body {
 }
 .sec3Slide .textBox .topTx {
     color: #000000;
-    font-size: 2.6rem;
+    font-size: 2.4rem;
     font-weight: 600;
     letter-spacing: -0.025em;
 }
 .sec3Slide .textBox .btmTx {
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     color: #6c6b6b;
     line-height: 1.2;
     font-weight: 600;
@@ -358,6 +358,12 @@ body {
 }
 .sec3Slide .sub_box a:hover .btmTx {
     color: #fff;
+}
+.logoimg4 {
+    height: 10rem;
+}
+.logoimg5 {
+    height: 10rem;
 }
 
 
@@ -859,6 +865,9 @@ body {
     .sec3Slide .logoBox img {
         height: 5rem;
     }
+    .sec3Area > div {
+        padding: 0 1rem;
+    }
     .sec3Slide .textBox {
         gap: 2rem;
     }
@@ -934,6 +943,9 @@ body {
     .instaBox img {
         height: 15rem;
     }
+    .sec3Area .sec3Slide .logoimg2 {
+        height: 3rem;
+    }
 
     /* footer */
     .footer {
@@ -943,3 +955,24 @@ body {
         font-size: 1.3rem;
     }
 }
+
+/* @media screen and (max-width: 500px) {
+    .sec3Slide .textBox .topTx {
+        font-size: 3.8vw;
+    }
+    .sec3Slide .textBox .btmTx {
+        font-size: 2.8vw;
+    }
+    .sec3Slide .sub_box a .topTx {
+        font-size: 4vw;
+    }
+    .sec3Slide .sub_box a .btmTx {
+        font-size: 3.2vw;
+    }
+    .sec3Slide .main_box a {
+        height: 23rem;
+    }
+    .sec3Slide .sub_box a {
+        height: 13rem;
+    }
+} */
