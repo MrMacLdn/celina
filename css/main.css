@@ -296,7 +296,18 @@ body {
 }
 .sec3Slide .swiper-slide .main_box:hover a .textBox .btmTx {
     color: #fff;
+    display: none;
 }
+.sec3Slide .swiper-slide .main_box a .textBox .hoverTxt {
+    display: none;
+    color: #fff;
+}
+.sec3Slide .swiper-slide .main_box:hover a .textBox .hoverTxt {
+    display: block;
+    color: #fff;
+}
+
+
 
 .sec3Slide .logoBox {
     height: 9.7rem;
@@ -318,6 +329,12 @@ body {
     letter-spacing: -0.025em;
 }
 .sec3Slide .textBox .btmTx {
+    font-size: 1.4rem;
+    color: #6c6b6b;
+    line-height: 1.2;
+    font-weight: 600;
+} 
+.sec3Slide .textBox .hoverTxt {
     font-size: 1.4rem;
     color: #6c6b6b;
     line-height: 1.2;
@@ -364,6 +381,16 @@ body {
 }
 .logoimg5 {
     height: 10rem;
+}
+.sec3Area > div .results .linktxt{
+    width: 50%;
+    float: left;
+    text-align: center;
+    font-size: 2rem;
+    color: #6c6b6b;
+    line-height: 1.2;
+    font-weight: 600;
+    padding-top: 7rem;
 }
 
 
