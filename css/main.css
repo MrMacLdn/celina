@@ -387,10 +387,14 @@ body {
     float: left;
     text-align: center;
     font-size: 2rem;
-    color: #6c6b6b;
+    color: black;
     line-height: 1.2;
     font-weight: 600;
     padding-top: 7rem;
+}
+
+.sec3Area > div .results .linktxt a{
+    color: #000;
 }
 
 
